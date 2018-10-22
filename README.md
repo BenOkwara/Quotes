@@ -1,6 +1,21 @@
 # Quotes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.4.
+This app allows users to view, vote and add a quote. It was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.4.
+
+### Author
+
+By: Benson Okwara.
+
+## Description
+
+This application has been designed by angular framework is about quotes. It has quotes already on the launching page. It allows the user to vote, create quotes and post them by submission. The time the quote was created and posted is also captured.
+
+## Technologies Used
+* Angular CLI
+* Typescript
+* Bootstrap
+
+## The application 
 
 ## Development server
 
@@ -25,3 +40,11 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Contact details
+
+Contact me @ maranathabenson@gmail.com
+
+### License
+
+Copyright :copyright: 2018 **tech-en**
