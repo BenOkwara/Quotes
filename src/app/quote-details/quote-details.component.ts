@@ -20,7 +20,6 @@
       }
 
       
-
       downVote () {
         this.quote.downVote ++
       }

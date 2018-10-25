@@ -63,9 +63,9 @@
 <ul>
 
   <div *ngFor='let quote of quotes; let i = index'>
-    <li id="{{i}}" appStrikethrough>{{quote.name}} likes {{quote.voteCount|number}}</li>
+    <li id="{{i}}" appStrikethrough>{{quote.name}} post on {{quote.postDate|date}}</li>
 
-    <button (click)='toogleDetails(i)'>Inspirational quote</button>
+    <button (click)='toogleDetails(i)'>Inspirational quotes</button>
 
     <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (deleteQuote)='removeThis($event,i)'></app-quote-details>
   </div>
