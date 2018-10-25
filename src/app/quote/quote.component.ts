@@ -12,7 +12,7 @@
      quotes = [
 
        new Quote (1, 'Chinese Proverb','Behind every able man, there are always other able men.', 0, 0, new Date(2018,10,19)),
-       new Quote (2, 'Dr. Suess', 'Dont cry because its over, smile because it happened', 0, 0, Date(2018,10,19)),
+       new Quote (2, 'Dr. Suess', 'Dont cry because its over, smile because it happened', 0, 0, new Date(2018,10,19)),
        new Quote (3, 'Hudson Taylor','There are three stages in the work of God: impossible, difficult,done.', 0, 0, new Date(2018,10,19)),
 
      ]
