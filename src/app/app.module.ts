@@ -13,8 +13,8 @@ import { DateCountPipe } from './date-count.pipe';
 @NgModule({
   declarations: [
     AppComponent,
-    QuoteDetailsComponent,
     QuoteComponent,
+    QuoteDetailsComponent,
     QuoteFormComponent,
     StrikethroughDirective,
     VoteCountPipe,

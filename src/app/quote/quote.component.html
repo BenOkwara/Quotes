@@ -71,13 +71,11 @@
   </div>
 </ul>
 
+<p *ngIf='quotes.length > 2'> Retain two quotes </p>
+
 <div class="container">
   <div class="row">
-    <app-quote-form (addQuote)="addNewQuote($event) "></app-quote-form>
+    <app-quote-form (addQuote)="addNewQuote ($event)"></app-quote-form>
   </div>
 </div>
 
-
-
-
-<!-- <p *ngIf='quotes.votes > 5'> Has got the Highest likes!!</p> -->
