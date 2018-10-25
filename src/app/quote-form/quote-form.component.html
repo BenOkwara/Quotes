@@ -38,11 +38,11 @@
   </div>
 </div> -->
 
-<div class="container">
+<div class="container-fluid">
   <form class="form-horizontal" (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
     <div class="form-group">
       <div class="col-sm-5">
-        <textarea class="form-control" id="description" rows="5" required></textarea>
+        <textarea class="form-control" id="description" rows="5" [(ngModel)]="newQuote.description" name="description" #description="ngModel" required></textarea>
         <label class="control-label col-sm-1.2" for="description">Quote:</label>
       </div>
     </div>
