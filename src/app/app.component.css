@@ -1,0 +1,15 @@
+h1 {
+  color: gold;
+  padding-left: 35px;
+  border-radius: 20px;
+}
+h3 {
+  color: blue;
+}
+h2 {
+  color: blue;
+}
+p {
+  font-size: 18px;
+  color: orange;
+}

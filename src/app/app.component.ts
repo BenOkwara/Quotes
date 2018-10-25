@@ -4,7 +4,7 @@ import {Quote} from './quote'
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html'
-  
+  styleUrls: ['./app.component.css']
 
 })
 export class AppComponent {
@@ -15,5 +15,5 @@ export class AppComponent {
        new Quote (3, 'Hudson Taylor', 'There are three stages in the work of God: impossible, difficult,done.', 0, 0, new Date()),
    ];
 
-  
+
 }

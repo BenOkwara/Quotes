@@ -1,21 +1,22 @@
-<div class="container-fluid">
+<!-- <div class="container-fluid">
   <div class="row">
-    <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
+    <form class="form-horizontal" (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
 
-      <div class="form-group">
-        <textarea class="form-control" id="description" rows="4" required></textarea>
-        <br>
-        <label for="description">Quote</label>
+      <div ></div>
+      <div class="form-group" class="col-sm-5">
+        <label class="control-label col-sm-0.8" for="description">Quote</label>
 
-      </div>
-      <br>
-      <div class="form-group">
+        <textarea class="form-control" id="description" rows="5" required></textarea>
+    
+      </div> 
+      
+      <div class="form-group" class="col-sm-5">
 
-        <label for="name">Author Name</label>
+        <label class="control-label col-sm-3" for="pwd" >Author Name</label>
         <input type="text" required class="form-control" id="author">
 
       </div>
-      <br>
+      
 
       <div class="form-group">
 
@@ -24,15 +25,46 @@
 
       </div>
 
-      <div class="form-group">
+      <div class="form-group" class="col-sm-5">
 
         <label for="name">Your Name</label>
         <input type="text" required class="form-control" id="name">
 
       </div>
-      <br>
+      
       <button type="button" class="btn btn-secondary">Add quote</button>
     </form>
 
   </div>
+</div> -->
+
+<div class="container">
+  <form class="form-horizontal" (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
+    <div class="form-group">
+      <div class="col-sm-5">
+        <textarea class="form-control" id="description" rows="5" required></textarea>
+        <label class="control-label col-sm-1.2" for="description">Quote:</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="col-sm-5">
+        <input type="text" required class="form-control" id="author">
+        <label class="control-label col-sm-1.2" for="author">Author Name:</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="col-sm-5">
+        <input type="text" required class="form-control" id="name">
+        <label class="control-label col-sm-1.2" for="name">Your Name:</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="col-sm-offset-3.5 col-sm-10">
+        <button type="button" class="btn btn-secondary">Add quote</button>
+      </div>
+    </div>
+  </form>
 </div>
