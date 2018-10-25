@@ -44,13 +44,21 @@
       <div class="col-sm-5">
         <textarea class="form-control" id="description" rows="5" [(ngModel)]="newQuote.description" name="description" #description="ngModel" required></textarea>
         <label class="control-label col-sm-1.2" for="description">Quote:</label>
+
+        <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
+          <p>Please Add a quote!</p>
+        </div>
       </div>
     </div>
 
     <div class="form-group">
       <div class="col-sm-5">
-        <input type="text" required class="form-control" id="author">
+        <input type="text" class="form-control" id="author" [(ngModel)]="newQuote.name" name="author" #name="ngModel" required>
         <label class="control-label col-sm-1.2" for="author">Author Name:</label>
+
+        <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+          <p>Add Author's Name</p>
+        </div>
       </div>
     </div>
 
