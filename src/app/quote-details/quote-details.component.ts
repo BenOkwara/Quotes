@@ -9,8 +9,6 @@
  export class QuoteDetailsComponent implements OnInit {
 
      @Input () quote:Quote;
-     @Output() likeIt = new EventEmitter<boolean>();
-     @Output() notLike = new EventEmitter<boolean>();
      @Output() deleteQuote = new EventEmitter<boolean>();
 
       delete(deleteIt:boolean) {
