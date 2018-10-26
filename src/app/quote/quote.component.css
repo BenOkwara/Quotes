@@ -1,11 +1,12 @@
 .quote {
   background-image: url("https://wallpaper.wiki/wp-content/uploads/2017/04/wallpaper.wiki-Cool-Nature-Photos-For-Desktop-PIC-WPD0010116.png");
-  color:darkviolet;
+  color:gold;
 }
 
 ul {
-  background-image: url("https://upliftconnect.com/wp-content/uploads/2015/12/einstein_feature2.jpg");
-  background-size: auto;
+  background-image: url("https://steemitimages.com/DQmbayCeoV7jWjZbzqoABR7tBrv2dec41kqhyzNCjirjScf/798-Abraham-Lincoln-Quote-Whatever-you-are-be-a-good-one.jpg");
+
+  background-size: contain;
   padding: 50px;
 }
 ul li {
