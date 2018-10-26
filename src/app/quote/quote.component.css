@@ -5,6 +5,7 @@
 
 ul {
   background-image: url("https://upliftconnect.com/wp-content/uploads/2015/12/einstein_feature2.jpg");
+  background-size: auto;
   padding: 50px;
 }
 ul li {
