@@ -5,7 +5,7 @@
 
   <p>Hi there, time to Vote, Choose a qoute that best please you</p>
 
-  <ul>
+  <ul class="ul">
 
     <div *ngFor='let quote of quotes; let i = index'>
       <li id="{{i}}" appStrikethrough>{{quote.name}}</li>
@@ -17,8 +17,7 @@
   </ul>
 </div>
 
-  <p *ngIf='quotes.length > 2'> Retain two quotes </p>
-</div>
+<kbd><p *ngIf='quotes.length > 2' class="p2"> Retain two quotes </p></kbd>
 
 <div class="container">
   <div class="row">
