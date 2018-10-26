@@ -15,7 +15,9 @@ This application has been designed by angular framework is about quotes. It has 
 * Typescript
 * Bootstrap
 
-## The application 
+## Bug
+
+The add quote button doe is not functioning
 
 ## Development server
 
