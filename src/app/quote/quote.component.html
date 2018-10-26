@@ -10,7 +10,7 @@
     <div *ngFor='let quote of quotes; let i = index'>
       <li id="{{i}}" appStrikethrough>{{quote.name}}</li>
 
-      <button (click)='toogleDetails(i)'>Inspirational quotes</button>
+      <button (click)='toogleDetails(i)' class="btn btn-primary" >Inspirational quotes</button>
 
       <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (deleteQuote)='removeThis($event,i)'></app-quote-details>
     </div>
