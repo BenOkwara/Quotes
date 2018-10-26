@@ -1,77 +1,24 @@
-<!-- <h1>Inspirational quotes</h1>
+<hr>
+<div class="quote">
+<div class="container">
+  <div class="jumbotron">
 
-<div class="accordion" id="accordion">
-  <div class="card">
-    <div class="card-header" id="headingOne">
-      <h5 class="mb-0">
-        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-          aria-controls="collapseOne">
-          ~ Chinese proverb
-        </button>
-      </h5>
+  <p>Hi there, time to Vote, Choose a qoute that best please you</p>
+
+  <ul>
+
+    <div *ngFor='let quote of quotes; let i = index'>
+      <li id="{{i}}" appStrikethrough>{{quote.name}}</li>
+
+      <button (click)='toogleDetails(i)'>Inspirational quotes</button>
+
+      <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (deleteQuote)='removeThis($event,i)'></app-quote-details>
     </div>
+  </ul>
+</div>
 
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-      <div class="card-body">
-        "Behind every able man, there are always other able men."
-      </div>
-    </div>
-  </div>
-
-  <div class="accordion" id="accordion">
-    <div class="card">
-      <div class="card-header" id="headingOne">
-        <h5 class="mb-0">
-          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-            aria-controls="collapseOne">
-            ~ Dr. Seuss
-          </button>
-        </h5>
-      </div>
-
-      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-        <div class="card-body">
-          “Don't cry because it's over, smile because it happened.”
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-header" id="headingTwo">
-        <h5 class="mb-0">
-          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
-            aria-expanded="false" aria-controls="collapseTwo">
-            ~ Hudson Taylor
-          </button>
-        </h5>
-      </div>
-      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-        <div class="card-body">
-          "There are three stages in the work of God: impossible, difficult,done."
-        </div>
-      </div>
-    </div> -->
-
-<!-- <div class="container">
-      <div class="row">
-        <app-quote-form></app-quote-form>
-      </div>
-    </div> -->
-    <hr>
-<p>Hi there, time to Vote, Choose a qoute that best please you</p>
-
-<ul>
-
-  <div *ngFor='let quote of quotes; let i = index'>
-    <li id="{{i}}" appStrikethrough>{{quote.name}} post on {{quote.postDate|date}}</li>
-
-    <button (click)='toogleDetails(i)'>Inspirational quotes</button>
-
-    <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (deleteQuote)='removeThis($event,i)'></app-quote-details>
-  </div>
-</ul>
-
-<p *ngIf='quotes.length > 2'> Retain two quotes </p>
+  <p *ngIf='quotes.length > 2'> Retain two quotes </p>
+</div>
 
 <div class="container">
   <div class="row">
