@@ -17,7 +17,7 @@ This application has been designed by angular framework is about quotes. It has 
 
 ## Bug
 
-The add quote button doe is not functioning
+The add quote button is not functioning
 
 ## Development server
 
